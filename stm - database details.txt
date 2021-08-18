@@ -1,0 +1,63 @@
+create database stm
+
+mysql> select * from students;
++---------+--------+-------------------+--------+------------+------------+-----
+--------------------+-------+---------+-----------+----------+---------+--------
++
+| roll_no | name   | email             | gender | contact    | dob        | addr
+ess                 | maths | physics | chemistry | comp_sci | english | attend
+|
++---------+--------+-------------------+--------+------------+------------+-----
+--------------------+-------+---------+-----------+----------+---------+--------
++
+|       1 | Alka   | alka@gmail.com    | Female | 1234506789 | 10-02-2002 | Beng
+aluru,India
+
+
+
+     |    70 |      76 |        81 |       83 |      90 |    229 |
+|       2 | Amit   | amit@gmail.com    | Male   | 9087654321 | 01-06-2001 | Beha
+rdin,Saudi Arabia
+
+ |    83 |      89 |        73 |       90 |      95 |    231 |
+|       3 | Amrit  | amrit@yahoo.com   | Male   | 1234567809 | 21-12-2000 | Sydn
+ey,Australia
+
+
+     |    30 |      36 |        29 |       63 |      67 |    235 |
+|       4 | Aditi  | aditi@yahoo.com   | Female | 9102837465 | 19-07-2003 | Beji
+ng,China
+
+
+
+        |    73 |      71 |        85 |       82 |      89 |    220 |
+|       5 | Bharat | bharat@gmail.com  | Others | 9087654321 | 16-04-2003 | Wale
+s,England
+          |    60 |      63 |        61 |       59 |      73 |    233 |
+|       6 | bhagya | bhagya@rediff.com | Female | 8262812345 | 06-01-2009 | New
+Delhi,Delhi
+
+       |    60 |      67 |        63 |       88 |      93 |    210 |
++---------+--------+-------------------+--------+------------+------------+-----
+--------------------+-------+---------+-----------+----------+---------+--------
++
+6 rows in set (0.08 sec)
+
+
+
+mysql> desc student;
++-----------+---------+------+-----+---------+-------+
+| Field     | Type    | Null | Key | Default | Extra |
++-----------+---------+------+-----+---------+-------+
+| id        | int(11) | NO   | PRI | NULL    |       |
+| StdID     | text    | YES  |     | NULL    |       |
+| Firstname | text    | YES  |     | NULL    |       |
+| Surname   | text    | YES  |     | NULL    |       |
+| DoB       | text    | YES  |     | NULL    |       |
+| Age       | text    | YES  |     | NULL    |       |
+| Gender    | text    | YES  |     | NULL    |       |
+| Address   | text    | YES  |     | NULL    |       |
+| Mobile    | text    | YES  |     | NULL    |       |
++-----------+---------+------+-----+---------+-------+
+9 rows in set (0.06 sec)
+
